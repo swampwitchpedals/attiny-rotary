@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>/Users/mac/Code/swamp-witch/schematics/utility/rotary-multiplexor/rotary-multiplexor.kicad_sch</source>
+    <date>Saturday, June 24, 2023 at 11:16:56 AM</date>
+    <tool>Eeschema (6.0.0-0)</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>rotary-multiplexor.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="J1">
+      <value>CONN</value>
+      <footprint>swamp-witch:DIP_8pin_TH</footprint>
+      <libsource lib="Connector_Generic" part="Conn_02x04_Counter_Clockwise" description="Generic connector, double row, 02x04, counter clockwise pin numbering scheme (similar to DIP packge numbering), script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="rotary-multiplexor.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>56e754ab-cae3-4841-9850-82f78fcc4a52</tstamps>
+    </comp>
+    <comp ref="PC1">
+      <value>100n</value>
+      <footprint>swamp-witch:C_0805</footprint>
+      <libsource lib="4ms-passives" part="CAP_TH" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="rotary-multiplexor.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>6a6e9589-0fab-4b8d-a7f2-8a6a8b8ab9f1</tstamps>
+    </comp>
+    <comp ref="PC2">
+      <value>100n</value>
+      <footprint>swamp-witch:C_0805</footprint>
+      <libsource lib="4ms-passives" part="CAP_TH" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="rotary-multiplexor.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c8fa6d40-c320-4784-a3d5-9558de418c32</tstamps>
+    </comp>
+    <comp ref="PU1">
+      <value>L78L05_SOT89</value>
+      <footprint>Package_TO_SOT_SMD:SOT-89-3</footprint>
+      <datasheet>http://www.st.com/content/ccc/resource/technical/document/datasheet/15/55/e5/aa/23/5b/43/fd/CD00000446.pdf/files/CD00000446.pdf/jcr:content/translations/en.CD00000446.pdf</datasheet>
+      <libsource lib="Regulator_Linear" part="L78L05_SOT89" description="Positive 100mA 30V Linear Regulator, Fixed Output 5V, SOT-89"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="rotary-multiplexor.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1eb3aed7-c3a8-44ab-8523-673c9a156979</tstamps>
+    </comp>
+    <comp ref="U1">
+      <value>Attiny85</value>
+      <footprint>Package_SO:SOIC-8_3.9x4.9mm_P1.27mm</footprint>
+      <libsource lib="4ms-ic" part="Attiny85" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="rotary-multiplexor.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>8a5b9051-61e6-4f4b-9739-3c425a4db9cd</tstamps>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="4ms-ic" part="Attiny85">
+      <footprints>
+        <fp>*SOT*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">Attiny85</field>
+        <field name="Footprint">4ms-footprints:DIP_8pin_TL072_TH</field>
+      </fields>
+      <pins>
+        <pin num="1" name="PB5" type="input"/>
+        <pin num="2" name="PB3" type="input"/>
+        <pin num="3" name="PB4" type="input"/>
+        <pin num="4" name="GND" type="input"/>
+        <pin num="5" name="PB0" type="input"/>
+        <pin num="6" name="PB1" type="input"/>
+        <pin num="7" name="PB2" type="input"/>
+        <pin num="8" name="VCC" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="4ms-passives" part="CAP_TH">
+      <description>Unpolarized capacitor</description>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">CAP_TH</field>
+        <field name="Footprint">4ms-footprints:Cap_Ceramic_TH</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector_Generic" part="Conn_02x04_Counter_Clockwise">
+      <description>Generic connector, double row, 02x04, counter clockwise pin numbering scheme (similar to DIP packge numbering), script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_2x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_02x04_Counter_Clockwise</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+        <pin num="6" name="Pin_6" type="passive"/>
+        <pin num="7" name="Pin_7" type="passive"/>
+        <pin num="8" name="Pin_8" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Regulator_Linear" part="L78L05_SOT89">
+      <description>Positive 100mA 30V Linear Regulator, Fixed Output 5V, SOT-89</description>
+      <docs>http://www.st.com/content/ccc/resource/technical/document/datasheet/15/55/e5/aa/23/5b/43/fd/CD00000446.pdf/files/CD00000446.pdf/jcr:content/translations/en.CD00000446.pdf</docs>
+      <footprints>
+        <fp>SOT?89*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">L78L05_SOT89</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-89-3</field>
+        <field name="Datasheet">http://www.st.com/content/ccc/resource/technical/document/datasheet/15/55/e5/aa/23/5b/43/fd/CD00000446.pdf/files/CD00000446.pdf/jcr:content/translations/en.CD00000446.pdf</field>
+      </fields>
+      <pins>
+        <pin num="1" name="OUT" type="power_out"/>
+        <pin num="2" name="GND" type="power_in"/>
+        <pin num="3" name="IN" type="power_in"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="4ms-ic">
+      <uri>/Users/mac/Code/4ms-kicad-lib/lib-sch/4ms-ic.lib</uri>
+    </library>
+    <library logical="4ms-passives">
+      <uri>/Users/mac/Code/4ms-kicad-lib/lib-sch/4ms-passives.lib</uri>
+    </library>
+    <library logical="Connector_Generic">
+      <uri>/Applications/KiCad/KiCad.app/Contents/SharedSupport/symbols//Connector_Generic.kicad_sym</uri>
+    </library>
+    <library logical="Regulator_Linear">
+      <uri>/Applications/KiCad/KiCad.app/Contents/SharedSupport/symbols//Regulator_Linear.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="+5V">
+      <node ref="PC2" pin="1" pintype="passive"/>
+      <node ref="PU1" pin="1" pinfunction="OUT" pintype="power_out"/>
+      <node ref="U1" pin="8" pinfunction="VCC" pintype="input"/>
+    </net>
+    <net code="2" name="+9V">
+      <node ref="J1" pin="8" pinfunction="Pin_8" pintype="passive"/>
+      <node ref="PC1" pin="2" pintype="passive"/>
+      <node ref="PU1" pin="3" pinfunction="IN" pintype="power_in"/>
+    </net>
+    <net code="3" name="GND">
+      <node ref="J1" pin="4" pinfunction="Pin_4" pintype="passive"/>
+      <node ref="PC1" pin="1" pintype="passive"/>
+      <node ref="PC2" pin="2" pintype="passive"/>
+      <node ref="PU1" pin="2" pinfunction="GND" pintype="power_in"/>
+      <node ref="U1" pin="4" pinfunction="GND" pintype="input"/>
+    </net>
+    <net code="4" name="Net-(J1-Pad6)">
+      <node ref="J1" pin="6" pinfunction="Pin_6" pintype="passive"/>
+      <node ref="U1" pin="6" pinfunction="PB1" pintype="input"/>
+    </net>
+    <net code="5" name="Net-(J1-Pad7)">
+      <node ref="J1" pin="7" pinfunction="Pin_7" pintype="passive"/>
+      <node ref="U1" pin="7" pinfunction="PB2" pintype="input"/>
+    </net>
+    <net code="6" name="Net-(U1-Pad1)">
+      <node ref="J1" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="U1" pin="1" pinfunction="PB5" pintype="input"/>
+    </net>
+    <net code="7" name="Net-(U1-Pad2)">
+      <node ref="J1" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="U1" pin="2" pinfunction="PB3" pintype="input"/>
+    </net>
+    <net code="8" name="Net-(U1-Pad3)">
+      <node ref="J1" pin="3" pinfunction="Pin_3" pintype="passive"/>
+      <node ref="U1" pin="3" pinfunction="PB4" pintype="input"/>
+    </net>
+    <net code="9" name="Net-(U1-Pad5)">
+      <node ref="J1" pin="5" pinfunction="Pin_5" pintype="passive"/>
+      <node ref="U1" pin="5" pinfunction="PB0" pintype="input"/>
+    </net>
+  </nets>
+</export>

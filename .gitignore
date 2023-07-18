@@ -1,0 +1,6 @@
+## Kicad
+fp-info-cache
+*-backups/
+gerber/
+
+## Arduino
