@@ -27,5 +27,7 @@ sized position-sensor (5, 6 and 8) are available in the `arduino/` directory.
 1. Solder your Attiny to the Module. 
 2. Solder the power regulator and filter caps onto the Module.
 3. Plug the Module in the Programming Shield.
-4. Select your position-sensor-size sketch and program the Attiny.
-5. Attach Module to your effect PCB, with the mux-select lines (pins 7, 6 and 5) tied to each 4051 you wish to control, and the position sensor pins 3 and 2 wired to pins 2 and 3 of the Module.
+4. Program the Atmega with the ArduinoAsISP sketch.
+5. Select the Attiny board of your choice, clock speed, and set the programmer to ArduinoAsISP (NOT Arduino As ISP).
+6. Select your position-sensor-size sketch and program the Attiny using the "Upload via programmer" option.
+7. Attach Module to your effect PCB, with the mux-select lines (pins 7, 6 and 5) tied to each 4051 you wish to control, and the position sensor pins 3 and 2 wired to pins 2 and 3 of the Module.
